@@ -1,0 +1,14 @@
+alg: [her, ppo2]
+cpu: [1, 4, 7]
+env: [FetchReach-v1, UR5Reach-v1]
+num_timesteps_her: [50000, 100000]
+num_timesteps_ppo: [0.000002, 0.000005]
+save_interval: [5]
+obstacle_type: [static, dynamic]
+obstacle_static_lambda: [s0, s1] # lambda functions
+obstacle_dynamic_lambda: [s0, s1] # lambda functions
+random_starting_position: [True]
+reward_type: [sparse, shaped]
+target_starting_position: [True]
+dynamic_target_lambda: [s0]
+punish_weight: [1,5,20]
